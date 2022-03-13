@@ -123,9 +123,47 @@
         .readMore-link {
             text-decoration: none;
             color: #003dd8;
+            font-size: 20px;
         }
         .readMore-table {
             border-radius: 3px;
+        }
+        .table-warning {
+            border: 1px solid #9ba8b0;
+            color: 9ba8b0;
+        }
+        .warning-table-title {
+            margin-top: -15px;
+        }
+        .warning-title {
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-top: -20px;
+            font-weight: 500;
+            font-size: 22px;
+            color: #9ba8b0;
+            background-color: #e2f4ff;
+        }
+        .warning-text {
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            max-width: 600px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .privacy-text {
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 200px;
+            padding-left: 40px;
+            font-size: 22px;
+            color: #9ba8b0;
+        }
+        .privacy-text > a {
+            text-decoration: none;
+            color: #9ba8b0;
         }
     </style>
 </head>
@@ -235,7 +273,7 @@
                                             <a class="readMore-link" href="https://quadcode.com/en/company" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';"  target="_blank"> 
                                                 <table class="readMore-table" cellpadding="0" cellspacing="0" width="450" height="60px"  bgcolor="#ffffff">
                                                     <tr align="center">
-                                                        <td>Read More</a>
+                                                        <td class="readMore-link">Read More</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -244,11 +282,32 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <table class="table-board-readMore" cellpadding="0" cellspacing="0" width="750" align="center" bgcolor="#ffffff">
+                                <table style="margin-bottom: 60px;" class="table-board-readMore" cellpadding="0" cellspacing="0" width="750" align="center" bgcolor="#ffffff">
                                     <tr>
                                         <td align="center">
                                             <img src="./img/second-part-blur-interface.png" alt="blur-interface">
                                         </td>
+                                    </tr>
+                                </table>
+                                <table class="table-warning" cellpadding="0" cellspacing="0" align="center" width="700px">
+                                    <tr>
+                                        <td>
+                                            <table class="warning-table-title" cellpadding="0" cellspacing="0" align="center" >
+                                                <tr>
+                                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">
+                                                        <span class="warning-title">GENERAL RISK WARNING:</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td class="warning-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">The financial services provided by this website carry a high level of risk and can result in the loss of all your funds. You should never invest money that you can not afford to lose.</td>
+                                    </tr>
+                                </table>
+                                <table cellpadding="0" cellspacing="0" align="center">
+                                    <tr align="center">
+                                        <td class="privacy-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';"><a href="https://quadcode.com/en/technology" title="_blank">Privacy and Policy</a>&ensp;&ensp;|&ensp;&ensp;<a href="https://quadcode.com/en/technology" title="_blank">Unsubscribe</a></td>
                                     </tr>
                                 </table>
                             </table>
