@@ -7,359 +7,205 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            width: 100% !important;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            margin: 0;
-            padding: 0;
-            line-height: 100%;
-        }
+            /* media queries */
+            @media screen and (max-width: 600px){
+            .column {
+                max-width: 100% !important;
+                padding-left: 0 !important;
+            }
+            .feature-table {
+                max-width: 100% !important;
+                width: 250px !important;
+            }
+            .icon-feature1 {
+                padding-top: 40px !important;
 
-        [style*="Roboto"] {
-            font-family: 'Roboto', arial, sans-serif !important;
-        }
-
-        img {
-            outline: none;
-            text-decoration: none;
-            border: none;
-            -ms-interpolation-mode: bicubic;
-            max-width: 100% !important;
-            margin: 0;
-            padding: 0;
-            display: block;
-        }
-
-        table td {
-            border-collapse: collapse;
-        }
-
-        table {
-            border: 0;
-            border-collapse: collapse;
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-        .prev-text.first-sent {
-            height: 56px;
-            padding-top: 100px;
-            color: #ff0940;
-            font-size: 56px;
-            font-weight: 700;
-        }
-        .prev-text {
-            height: 56px;
-            padding-left: 70px;
-            font-size: 48px;
-            font-weight: 500;
-            color: #003dd8;
-        }
-        .prev-sentence {
-            padding-left: 70px;
-            font-size: 24px;
-            font-weight: 700;
-            height: 50px;
-        }
-        .table-board {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .board-title-sentence {
-            padding-left: 40px;
-            color: #003dd8;
-            font-size: 30px;
-            font-weight: 400;
-            height: 30px;
-        }
-        .hor-line {
-            padding-top: 10px;
-            padding-bottom: 15px;
-            padding-left: 40px;
-            height: 4px;
-        }
-        .board-sentence {
-            padding-left: 40px;
-            padding-right: 40px;
-            font-size: 22px;
-            line-height: 26px;
-            height: 80px;
-        }
-        .board-interface {
-            padding-top: 40px;
-        }
-
-        .table-board2 {
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius:  10px;
-            margin-bottom: 50px;
-            width: 750px;
-        }
-        .feature-table {
-            width: 200px;
-        }
-        .icon-feature {
-            padding-top: 52px;
-            padding-bottom: 33px;
-            text-align: center;
-            height: 55px;
-        }
-        .feature-text {
-            min-height: 169px;
-            font-size: 18px;
-            line-height: 22px;
-            padding-bottom: 80px;
-        }
-
-        .table-board-readMore {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius:  10px;
-        }
-
-        .readMore-text {
-            max-width: 500px;
-            color: #ffffff;
-            font-size: 24px;
-            line-height: 34px;
-        }
-        .readMore-link {
-            text-align: center;
-            max-width: 100%;
-            text-decoration: none;
-            background-color: #ffffff;
-            color: #003dd8;
-            font-size: 25px;
-            font-weight: 700;
-            margin-top: 200px;
-            padding: 14px 150px;
-            border-radius: 3px;
-        }
-
-        .readMore-second {
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius:  10px;
-        }
-
-        .readMore-table {
-            border-radius: 3px;
-        }
-        .table-warning {
-            border: 1px solid #9ba8b0;
-            max-width: 700px;
-        }
-        .warning-table-title {
-            margin-top: -15px;
-        }
-        .warning-title {
-            padding-right: 10px;
-            padding-left: 10px;
-            margin-top: -20px;
-            font-weight: 500;
-            font-size: 22px;
-            color: #9ba8b0;
-            background-color: #e2f4ff;
-        }
-        .warning-text {
-            padding-top: 20px;
-            padding-right: 40px;
-            padding-bottom: 30px;
-            padding-left: 40px;
-            max-width: 600px;
-            font-size: 20px;
-            line-height: 30px;
-            color: #9ba8b0;
-        }
-        .privacy-text {
-            padding-top: 20px;
-            padding-right: 40px;
-            padding-bottom: 200px;
-            padding-left: 40px;
-            font-size: 22px;
-            color: #9ba8b0;
-        }
-        .privacy-text > a {
-            text-decoration: none;
-            color: #9ba8b0;
+            }
+            .icon-feature {
+                padding-top: 10px !important;
+            }
+            .feature-text {
+                padding-bottom: 5px !important;
+                text-align: center !important;
+                font-size: 22px !important;
+            }
+            .feature-text:last-child {
+                padding-bottom: 35px !important;
+            }
         }
     </style>
-</head>
-<body style="margin: 0; padding: 0;">
-    <table cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-            <td>
-                <table style="background-repeat: no-repeat; max-width: 850px;" cellpadding="0" cellspacing="0" align="center"  bgcolor="#e2f4ff" background="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/desktop.png">
-                    <tr>
-                        <td>
-                            <table class="table-850" cellpadding="0" cellspacing="0" width="850" align="right">
-                                <tr>
-                                    <td valign="top">
-                                        <a href="https://quadcode.com/en/technology" title="_blank">
-                                            <img style="padding-left: 70px;; padding-top: 40px;" width="200" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/logo.png" alt="logo" />
-                                        </a>            
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="prev-text first-sent" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">3 Easy Steps</td>
-                                </tr>
-                                <tr>
-                                    <td class="prev-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">to Improve your</td>
-                                </tr>
-                                <tr>
-                                    <td class="prev-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">Chance of Success</td>
-                                </tr>
-                                <tr>
-                                    <td class="prev-sentence" style="padding-top: 30px; padding-bottom: 50px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">These steps are simple, effective and 100% free.</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table class="table-board" cellpadding="0" cellspacing="0" width="750" align="center" bgcolor="#ffffff">
-                                            <tr>
-                                                <td class="board-title-sentence" style="padding-top: 50px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">1. Play around with the Price Chart</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img class="hor-line" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/horizont-line-blue.png" alt="horizont-line-blue">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="left" style="padding-right: 20px;">
-                                                    <table cellpadding="0" cellspacing="0" class="block-table" align="left">
-                                                        <tr>
-                                                            <td align="left">
-                                                                <p class="board-sentence" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">
-                                                                    Did you know you can adjust the price chart to your personal 
-                                                                    preference and trading goals? So simple, yet so <b>useful for 
-                                                                    making more accurate predictions.</b>
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center">
-                                                    <a href="https://quadcode.com/en/technology" title="_blank">
-                                                        <img class="board-interface" width="580" heigth="325" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/board-interface.png" alt="board-interface">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" class="board-title-sentence" style="padding-left: 0; padding-top: 50px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">You Can:</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table class="table-board2" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff">
-                                            <tr>
-                                                <td>
-                                                    <table class="feature-table" cellpadding="0" cellspacing="0" align="center">
-                                                        <tr align="center">
-                                                            <td><img class="icon-feature" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/img-swipe.png" alt="swipe" /></td>
-                                                        </tr>
-                                                        <tr align="left">
-                                                            <td class="feature-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';"><b>Hold and drag</b><br>the chart to review<br>earlier price dynamic.<br><br></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td>
-                                                    <table class="feature-table" cellpadding="0" cellspacing="0" align="center">
-                                                        <tr align="center">
-                                                            <td><img class="icon-feature" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/img-swipe2.png" alt="swipe" /></td>
-                                                        </tr>
-                                                        <tr align="left">
-                                                            <td class="feature-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';"><b>Scale the chart </b>by changing the display period between 30 days and 30 minutes.</td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td>
-                                                    <table class="feature-table" cellpadding="0" cellspacing="0" align="center">
-                                                        <tr align="center">
-                                                            <td><img class="icon-feature" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/img-tap.png" alt="swipe" /></td>
-                                                        </tr>
-                                                        <tr align="left">
-                                                            <td class="feature-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';"><b>Choose the type of chart</b> you want to use. Do you prefer Lines, Candles or Bars?</td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table cellpadding="0" cellspacing="0" width="850" align="center">
-                                            <tr align="center">
-                                                <td class="readMore-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">
-                                                    <img class="icon-readMore" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/first-part-blur-interface.png" alt="readMore">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table cellpadding="0" cellspacing="0" width="850" height="225px" align="center" bgcolor="#003dd8">
-                                            <tr>
-                                                <td class="readMore-text" align="center" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">
-                                                    <p>
-                                                        <b>Read the</b> &#8220;easy steps towards success in trading&#8221;<br><b>on the IQ Blog to boost your trading skills.</b>
-                                                    </p>
-                                                    <p style="margin-top: 50px">
-                                                        <a class="readMore-link" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';" href="https://quadcode.com/en/company" target="_blank">
-                                                            Read More
+    <body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; line-height: 100%; margin: 0; padding: 0; width: 100%;">
+        <table cellpadding="0" cellspacing="0" width="100%" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+            <tr align="center">
+                <td style="border-collapse: collapse;">
+                    <table clas="main-table" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-repeat: no-repeat; max-width: 850px; width: 100%;" cellpadding="0" cellspacing="0" align="center" bgcolor="#e2f4ff" background="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/desktop.png" width="100%">
+                        <tr>
+                            <td style="border-collapse: collapse;">
+                                <table class="table-850" cellpadding="0" cellspacing="0" align="right" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 850px; width: 100%;" width="100%">
+                                    <tr>
+                                        <td valign="top" style="border-collapse: collapse;">
+                                            <a href="https://quadcode.com/en/technology" title="_blank">
+                                                <img style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; padding-left: 70px; padding-top: 40px; max-width: 100%;" width="200" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/logo.png" alt="logo">
+                                            </a>            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prev-text first-sent" style="border-collapse: collapse; padding-left: 70px; height: 56px; padding-top: 100px; color: #ff0940; font-size: 56px; font-weight: 700; font-family: 'Roboto', arial, sans-serif;" height="56">3 Easy Steps</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prev-text" style="border-collapse: collapse; height: 56px; padding-left: 70px; font-size: 48px; font-weight: 500; color: #003dd8; font-family: 'Roboto', arial, sans-serif;" height="56">to Improve your</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prev-text" style="border-collapse: collapse; height: 56px; padding-left: 70px; font-size: 48px; font-weight: 500; color: #003dd8; font-family: 'Roboto', arial, sans-serif;" height="56">Chance of Success</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prev-sentence" style="border-collapse: collapse; padding-left: 70px; font-size: 24px; font-weight: 700; height: 50px; padding-top: 30px; padding-bottom: 50px; font-family: 'Roboto', arial, sans-serif;" height="50">These steps are simple, effective and 100% free.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-collapse: collapse;">
+                                            <table class="table-board" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 1%; padding-left: 1%; border-top-left-radius: 10px; border-top-right-radius: 10px; width: 100%; max-width: 750px;" width="100%">
+                                                <tr>
+                                                    <td class="board-title-sentence" style="border-collapse: collapse; padding-left: 40px; color: #003dd8; font-size: 30px; font-weight: 400; height: 30px; max-width: 750px; padding-top: 50px; font-family: 'Roboto', arial, sans-serif;" height="30">1. Play around with the Price Chart</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-collapse: collapse;">
+                                                        <img class="hor-line" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/horizont-line-blue.png" alt="horizont-line-blue" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; padding-top: 10px; padding-bottom: 15px; padding-left: 40px; height: 4px; max-width: 100%;" height="4">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="border-collapse: collapse; padding-right: 20px;">
+                                                        <table cellpadding="0" cellspacing="0" class="block-table" align="left" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                            <tr>
+                                                                <td align="left" style="border-collapse: collapse;">
+                                                                    <p class="board-sentence" style="padding-left: 40px; padding-right: 40px; font-size: 22px; line-height: 26px; height: 80px; font-family: 'Roboto', arial, sans-serif;">
+                                                                        Did you know you can adjust the price chart to your personal 
+                                                                        preference and trading goals? So simple, yet so <b>useful for 
+                                                                        making more accurate predictions.</b>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="border-collapse: collapse;">
+                                                        <a href="https://quadcode.com/en/technology" title="_blank">
+                                                            <img class="board-interface" width="580" heigth="325" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/board-interface.png" alt="board-interface" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; padding-top: 40px; max-width: 100%;">
                                                         </a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table style="margin-bottom: 60px;" class="table-board-readMore" cellpadding="0" cellspacing="0" width="750" align="center" bgcolor="#ffffff">
-                                            <tr>
-                                                <td align="center">
-                                                    <img class="readMore-second" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/second-part-blur-interface.png" alt="blur-interface">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table class="table-warning" cellpadding="0" cellspacing="0" align="center">
-                                            <tr>
-                                                <td>
-                                                    <table class="warning-table-title" cellpadding="0" cellspacing="0" align="center" >
-                                                        <tr>
-                                                            <td align="center" style="font-family: Arial, Helvetica, sans-serif, 'Roboto'; position:relative;top:0px; ">
-                                                                <span class="warning-title">GENERAL RISK WARNING:</span>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr align="center">
-                                                <td class="warning-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">The financial services provided by this website carry a high level of risk and can result in the loss of all your funds. You should never invest money that you can not afford to lose.</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table cellpadding="0" cellspacing="0" align="center">
-                                            <tr align="center">
-                                                <td class="privacy-text" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';"><a href="https://quadcode.com/en/privacy-policy" title="_blank">Privacy and Policy</a>&ensp;&ensp;|&ensp;&ensp;<a href="https://quadcode.com/en/technology" title="_blank">Unsubscribe</a></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-</body>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="board-title-sentence" style="border-collapse: collapse; color: #003dd8; font-size: 30px; font-weight: 400; height: 30px; max-width: 750px; padding-left: 0; padding-top: 50px; font-family: 'Roboto', arial, sans-serif;" height="30">You Can:</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-collapse: collapse;">
+                                            <table class="table-board2" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; margin-bottom: 50px; max-width: 750px; width: 100%;" width="100%">
+                                                <tr>
+                                                    <td align="center" style="border-collapse: collapse;">
+                                                        <div class="column" style="padding-right: 25px; padding-left: 25px; width: 100%; max-width: 180px; display: inline-block; vertical-align: top;">
+                                                            <table class="feature-table" width="100%" cellpadding="0" cellspacing="0" align="center" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 180px; width: 100%;">
+                                                                <tr align="center">
+                                                                    <td style="border-collapse: collapse;"><img class="icon-feature1" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/img-swipe.png" alt="swipe" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; padding-top: 52px; padding-bottom: 33px; text-align: center; height: 55px; max-width: 100%;" height="55"></td>
+                                                                </tr>
+                                                                <tr align="left">
+                                                                    <td class="feature-text" style="border-collapse: collapse; min-height: 169px; font-size: 18px; line-height: 22px; padding-bottom: 80px; font-family: 'Roboto', arial, sans-serif;"><b>Hold and drag</b><br>the chart to review<br>earlier price dynamic.<br><br></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="column" style="padding-right: 25px; padding-left: 25px; width: 100%; max-width: 180px; display: inline-block; vertical-align: top;">
+                                                            <table class="feature-table" width="100%" cellpadding="0" cellspacing="0" align="center" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 180px; width: 100%;">
+                                                                <tr align="center">
+                                                                    <td style="border-collapse: collapse;"><img class="icon-feature" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/img-swipe2.png" alt="swipe" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; padding-top: 52px; padding-bottom: 33px; text-align: center; height: 55px; max-width: 100%;" height="55"></td>
+                                                                </tr>
+                                                                <tr align="left">
+                                                                    <td class="feature-text" style="border-collapse: collapse; min-height: 169px; font-size: 18px; line-height: 22px; padding-bottom: 80px; font-family: 'Roboto', arial, sans-serif;"><b>Scale the chart </b>by changing the display period between 30 days and 30 minutes.</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="column" style="padding-right: 25px; padding-left: 25px; width: 100%; max-width: 180px; display: inline-block; vertical-align: top;">
+                                                            <table class="feature-table" width="100%" cellpadding="0" cellspacing="0" align="center" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 180px; width: 100%;">
+                                                                <tr align="center">
+                                                                    <td style="border-collapse: collapse;"><img class="icon-feature" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/img-tap.png" alt="swipe" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; padding-top: 52px; padding-bottom: 33px; text-align: center; height: 55px; max-width: 100%;" height="55"></td>
+                                                                </tr>
+                                                                <tr align="left">
+                                                                    <td class="feature-text" style="border-collapse: collapse; min-height: 169px; font-size: 18px; line-height: 22px; padding-bottom: 80px; font-family: 'Roboto', arial, sans-serif;"><b>Choose the type of chart</b> you want to use. Do you prefer Lines, Candles or Bars?</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-collapse: collapse;">
+                                            <table class="readMore-table" cellpadding="0" cellspacing="0" align="center" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; max-width: 850px; border-radius: 3px;" width="100%">
+                                                <tr align="center">
+                                                    <td class="readMore-text" style="border-collapse: collapse; max-width: 500px; color: #ffffff; font-size: 24px; line-height: 34px; font-family: 'Roboto', arial, sans-serif;">
+                                                        <img class="icon-readMore" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/first-part-blur-interface.png" alt="readMore" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; max-width: 100%;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="readMore-table" cellpadding="0" cellspacing="0" width="100%" height="225px" align="center" bgcolor="#003dd8" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; max-width: 850px; border-radius: 3px;">
+                                                <tr>
+                                                    <td class="readMore-text" align="center" style="border-collapse: collapse; max-width: 500px; color: #ffffff; font-size: 24px; line-height: 34px; font-family: 'Roboto', arial, sans-serif;">
+                                                        <p>
+                                                            <b>Read the</b> &#8220;easy steps towards success in trading&#8221;<br><b>on the IQ Blog to boost your trading skills.</b>
+                                                        </p>
+                                                        <p style="margin-top: 50px">
+                                                            <a class="readMore-link" style="text-align: center; max-width: 100%; text-decoration: none; background-color: #ffffff; color: #003dd8; font-size: 25px; font-weight: 700; margin-top: 200px; padding: 14px 150px; border-radius: 3px; font-family: 'Roboto', arial, sans-serif;" href="https://quadcode.com/en/company" target="_blank">
+                                                                Read More
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-collapse: collapse;">
+                                            <table style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; margin-bottom: 60px;" class="table-board-readMore" cellpadding="0" cellspacing="0" width="750" align="center" bgcolor="#ffffff">
+                                                <tr>
+                                                    <td align="center" style="border-collapse: collapse;">
+                                                        <img class="readMore-second" src="https://github.com/Sulfat404/Test-task-for-Quadcode/raw/master/img/second-part-blur-interface.png" alt="blur-interface" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; max-width: 100%;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-collapse: collapse;">
+                                            <table class="table-warning" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border: 1px solid #9ba8b0; max-width: 700px; width: 100%;" width="100%">
+                                                <tr>
+                                                    <td style="border-collapse: collapse; position: relative; bottom: 14px;" align="center">
+                                                        <span style="padding-right: 10px; padding-left: 10px; font-weight: 500; font-size: 22px; color: #9ba8b0; background-color: #e2f4ff; font-family: 'Roboto', arial, sans-serif;" class="warning-title">GENERAL RISK WARNING:</span>
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td class="warning-text" style="border-collapse: collapse; padding-top: 20px; padding-right: 40px; padding-bottom: 30px; padding-left: 40px; max-width: 600px; font-size: 20px; line-height: 30px; color: #9ba8b0; font-family: 'Roboto', arial, sans-serif;">The financial services provided by this website carry a high level of risk and can result in the loss of all your funds. You should never invest money that you can not afford to lose.</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-collapse: collapse;">
+                                            <table cellpadding="0" cellspacing="0" align="center" style="border: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                <tr align="center">
+                                                    <td class="privacy-text" style="border-collapse: collapse; padding-top: 20px; padding-right: 40px; padding-bottom: 200px; padding-left: 40px; font-size: 22px; color: #9ba8b0; font-family: 'Roboto', arial, sans-serif;"><a href="https://quadcode.com/en/privacy-policy" title="_blank" style="text-decoration: none; color: #9ba8b0;">Privacy and Policy</a>&ensp;&ensp;|&ensp;&ensp;<a href="https://quadcode.com/en/technology" title="_blank" style="text-decoration: none; color: #9ba8b0;">Unsubscribe</a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+    
+
